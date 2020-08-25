@@ -7,27 +7,30 @@ body {
 h2 {
     text-align: center;
     font-size: 1.6em;
+    margin: 0 0 20px 0;
 }
 
 /* HEADER */
 header {
     background: #E32636;
-    position: fixed;
-    top: 0;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
 h1 {
     color: #FFF;
-    margin-left: 15px;
+    margin: 20px;
+}
+
+ul {
+    padding: 0;
 }
 
 header ul {
     display: flex;
     list-style: none;
-    margin-right: 10px;
+    margin: 20px;
     line-height: 50px;
     color: #FFF;
 }
@@ -38,38 +41,11 @@ header li a {
     text-decoration: none;
 }
 
-@media (max-width: 800px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-        height: 125px;
-    }
-
-    header h1 {
-        margin-left: 0;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-
-    header ul {
-        margin-top: 0;
-        flex-direction: column;
-        line-height: 22px;
-    }
-}
-
 /* FEATURES */
 
 .features {
-    padding-top: 100px;
     text-align: center;
-    margin-bottom: 20px;
-}
-
-@media (max-width: 800px) {
-    .features {
-        margin-top: 135px;
-    }
+    margin: 20px 0 0 0;
 }
 
 .features strong {
@@ -88,6 +64,7 @@ header li a {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin: 30px 0 0 0;
 }
 
 .added-movie iframe {
@@ -97,7 +74,7 @@ header li a {
 
 /* PRICING*/
 .pricing {
-    margin-bottom: 50px;
+    margin: 30px 0 0 0;
 }
 
 .list-pricing {
@@ -128,7 +105,6 @@ header li a {
 .list-pricing h3 {
     background: #e50914;
     margin: 0;
-    height: 50px;
     line-height: 50px;
     color: #FFF;
     border-radius: 10px 10px 0 0;
@@ -138,9 +114,7 @@ header li a {
 
 .list-pricing p {
     background: #aaa;
-    margin-bottom: 0;
-    bottom: 0;
-    height: 50px;
+    margin: 0;
     line-height: 50px;
     color: #FFF;
     border-radius: 0 0 10px 10px;
@@ -149,12 +123,36 @@ header li a {
 
 .list-pricing ul {
     list-style: none;
-    padding: 10px 0;
+    margin: 20px 0;
 }
 
 .list-pricing li {
     margin-bottom: 10px;
     text-align: center;
+}
+
+/* EMAIL */
+.email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.submitbutton {
+text-align: center;
+}
+
+button {
+    width: 80px;
+    margin: .5em;
+    font-size: 1em;
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    padding: 5px;
+    border-radius: 2px;
 }
 
 /* FOOTER */
