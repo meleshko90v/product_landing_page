@@ -43,18 +43,18 @@ header li a {
 
 /* FEATURES */
 
-.features {
+.feature {
     text-align: center;
     margin: 20px 0 0 0;
 }
 
-.features strong {
+.feature strong {
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
     font-size: 1.3em;
 }
 
-.features p {
+.feature p {
     margin: 15px 0;
     font-size: 1.1em;
 }
